@@ -3,7 +3,7 @@ var cors = require('cors');
 
 const userRouter = require('./routes/userRoutes');
 const doctorRouter = require('./routes/doctorRoutes');
-const appointmentRouter = require('./routes/appointmentRoutes');
+const appointmentRouter = require('./routes/appointmentRoute');
 
 const mongoose =require('mongoose')
 require("dotenv").config()
