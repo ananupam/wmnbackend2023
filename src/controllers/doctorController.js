@@ -11,11 +11,12 @@ const getAllDoctors = async(req,res)=>{
 }
 
 const addDoctor = async(req,res)=>{
-    const {name, speciality, experience} = req.body;
+    const {name, speciality, experience, gender} = req.body;
         const newDoctor =new Doctor({
             name: name,
             speciality: speciality,
             experience: experience,
+            gender: gender,
         });
     try{
         await newDoctor.save();

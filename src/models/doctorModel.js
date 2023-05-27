@@ -11,7 +11,11 @@ const doctorSchema = mongoose.Schema(
             required: true,
         },
         experience: {
-            type: Number,
+            type: String,
+            required: true,
+        },
+        gender: {
+            type: String,
             required: true,
         }
     },

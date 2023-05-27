@@ -2,7 +2,8 @@ const express = require('express');
 var cors = require('cors');
 
 const userRouter = require('./routes/userRoutes');
-
+const doctorRouter = require('./routes/doctorRoutes');
+const appointmentRouter = require('./routes/appointmentRoutes');
 
 const mongoose =require('mongoose')
 require("dotenv").config()
@@ -19,6 +20,9 @@ app.use((req,res,next)=>{
 
 
 app.use("/user",userRouter);
+app.use("/doctor",doctorRouter);
+app.use("/appointment",appointmentRouter);
+
 
 app.get('/',(req,res)=>{
     res.send('Hello, welcome to sign up')
