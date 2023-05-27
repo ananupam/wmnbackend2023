@@ -25,7 +25,7 @@ mongoose
  .connect(process.env.MONGO_URI)
  .then(()=>{
     //starting the server and specifying the port, making sure app created after connecting to db
-    app.listen(5004,()=> {
+    app.listen(5005,()=> {
         console.log('Signup  is running');
     })
     console.log('connected to mongoDB')

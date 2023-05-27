@@ -13,8 +13,7 @@ const signup = async(req,res) =>{
             return res.status(400).json({message:"User already exists!"});
         }
         //password hashing
-        console.log("print password");
-        console.log(password);
+        console.log("user signed in");
         const hashedPassowrd= await bcrypt.hash(password,10);
 
         //new user creation
@@ -55,3 +54,5 @@ const login = async(req,res) =>{
         res.status(500).json({message:"OOPS! Something went wrong."})
     }
 }
+
+module.exports = {signup,login}
