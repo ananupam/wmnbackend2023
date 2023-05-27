@@ -12,7 +12,7 @@ const trackerSchema = mongoose.Schema({
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], // Specify the array type as [[Number]] for a 2D array of numbers
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], 
         required: true,
     },
     period: {
@@ -26,7 +26,7 @@ const trackerSchema = mongoose.Schema({
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], // Specify the array type as [[Number]] for a 2D array of numbers
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], 
         required: true,
     },
     mood: {
@@ -40,9 +40,12 @@ const trackerSchema = mongoose.Schema({
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], // Specify the array type as [[Number]] for a 2D array of numbers
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]], 
         required: true,
     }  
+},
+{
+    timestamps: true
 }
 );
 
